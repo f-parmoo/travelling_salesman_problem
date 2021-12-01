@@ -2,9 +2,10 @@
 
 ### This project was implemented with Flask.
 ### Test was Implemented by Unittest
-###Class Names:
-- Problems: this class contains each problem attributes like list of locations, distance_matrix and solution for the problem, ....
-- ProblemManager: this class manage Inbound and Outbound queues. it contains different queues
+
+### Class Names:
+- Problems: This class contains each problem attributes like list of locations, distance_matrix and solution for the problem, ....
+- ProblemManager: This class manages Inbound and Outbound queues. it contains different queues
   - Attributes
       - inbound_queues: This list contains created problems which are not subscribed. when we create a problem, it will be added to this list. when we subscribe a problem, one problem will be selected and will be sent to user and will be removed from this list (FIFO).
       - subscribed_problems: This list contains subscribed problems. When we subscribe a problem, selected problem will be removed from inbound_queues and will be added to this queue.
