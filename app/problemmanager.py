@@ -3,12 +3,13 @@ import logging
 from app import travelingproblem
 
 
+
 class Problems:
     def __init__(self, locations):
         self.locations = locations
         self.locations_count = len(locations)
         self.distance_matrix = []
-        self.solution = "Poblish Problem for Getting the Solution"
+        self.solution = "Publish Problem for Getting the Solution"
         self.num_vehicles = None
 
     def calculate_distance(self):
@@ -22,6 +23,18 @@ class Problems:
                 list1.append(result)
             final_list.append(list1)
         self.distance_matrix = final_list
+
+    def __str__(self):
+        return 'str'
+
+    def __repr__(self):
+        return f"""
+            locations: {self.locations},
+            distance_matrix: {self.distance_matrix},
+            solution: {self.solution}
+            
+            """
+
 
 
 class ProblemManager:
@@ -62,3 +75,8 @@ class ProblemManager:
         else:
             logging.error(f"Problem {problem_id} Does not Subscribed")
             return 0, f"Problem {problem_id} Does not Subscribed"
+
+
+
+
+

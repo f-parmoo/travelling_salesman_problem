@@ -9,7 +9,6 @@ idna==3.3
 itsdangerous==2.0.1
 Jinja2==3.0.3
 MarkupSafe==2.0.1
-numpy==1.21.4
 ortools==9.1.9490
 protobuf==3.19.1
 pydantic==1.8.2
